@@ -12,7 +12,7 @@ app = FastAPI()
 # Esto permite que React se conecte al backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://cv-analyzer-omega-drab.vercel.app", "https://cv-analyzer-8xbpfral2-aker456.vercel.app"],
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
