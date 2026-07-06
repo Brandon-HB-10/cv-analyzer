@@ -12,7 +12,7 @@ export default function App() {
   }, [])
 
   async function cargarHistorial() {
-    const response = await fetch('http://127.0.0.1:8000/historial')
+    const response = await fetch('https://cv-analyzer-production.up.railway.app/historial')
     const data = await response.json()
     setHistorial(data)
   }
@@ -22,7 +22,7 @@ export default function App() {
     setCargando(true)
     setResultado(null)
 
-    const response = await fetch('http://127.0.0.1:8000/analizar', {
+    const response = await fetch('https://cv-analyzer-production.up.railway.app/analizar', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ cv_texto: cvTexto })
