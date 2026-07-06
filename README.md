@@ -2,6 +2,9 @@
 
 Aplicación fullstack que analiza CVs usando Inteligencia Artificial.
 
+## 🔗 Demo en vivo
+[cv-analyzer-omega-drab.vercel.app](https://cv-analyzer-omega-drab.vercel.app)
+
 ## ¿Qué hace?
 - El usuario pega el texto de su CV
 - La IA lo analiza y regresa:
